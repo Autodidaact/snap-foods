@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import "./Home.css";
+import "../stylings/Home.css";
 import SearchBar from './SearchBar';
 import RestaurantsList from './RestaurantsList';
 
