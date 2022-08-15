@@ -1,17 +1,21 @@
 import React from 'react';
 import Restaurant from './Restaurant';
 
+
+
+
 function RestaurantsList({ result }) {
   
-/* let data;
+let data;
 if(result){
   data = result || [];
-} */ 
-const listRestaurants = result.map((item) => {
-  return(
-    <Restaurant key={item.id} results={item}/>
+} 
+const listRestaurants = data.length > 0 ? data.map((item) => {
+  return(    
+          <Restaurant key={item.id} results={item}/>    
   )
-})
+}): null;
+
   return (
     <div>
       {listRestaurants}
@@ -20,22 +24,3 @@ const listRestaurants = result.map((item) => {
 }
 export default RestaurantsList;
 
-/*<div className="searchIcon">
-          {filteredData.length === 0 ? (
-            <SearchIcon />
-          ) : (
-            <CloseIcon id="clearBtn" onClick={clearInput} />
-          )}
-        </div>
-      </div>
-      {filteredData.length != 0 && (
-        <div className="dataResult">
-          {filteredData.slice(0, 15).map((value, key) => {
-            return (
-              <a className="dataItem" href={value.link} target="_blank">
-                <p>{value.title} </p>
-              </a>
-            );
-          })}
-        </div>
-      )} */

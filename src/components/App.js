@@ -1,10 +1,14 @@
-import React from 'react'
-import Home from './Home'
+import React from "react"
+import 'bootstrap/dist/css/bootstrap.min.css';
+import ManNavBar from "./ManNavBar";
+
 
 function App() {
   return (
     <div>
-      <Home />
+      <ManNavBar/>
+    
+      
     </div>
   );
 }
